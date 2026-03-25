@@ -136,4 +136,29 @@ curl -X POST https://api.example.com/users \
   "email": "vishal@test.com",
   "city": "Varanasi"
 }'
+## Use Case: Create and Retrieve Data
+
+This section demonstrates how a client application interacts with the API in a real-world scenario.
+
+### Workflow:
+
+1. **Create User (POST /users)**
+
+   * The client sends user details to the server.
+   * The server creates a new user and returns a unique ID.
+
+2. **Retrieve User (GET /users/{id})**
+
+   * The client requests the user using the generated ID.
+   * The server returns the user details.
+
+3. **Create Post (POST /posts)**
+
+   * The client creates a post associated with a user.
+
+4. **Retrieve Posts (GET /posts)**
+
+   * The client fetches all posts or specific posts.
+
+This workflow shows how APIs are used together in a typical application.
 
