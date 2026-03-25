@@ -162,3 +162,11 @@ This section demonstrates how a client application interacts with the API in a r
 
 This workflow shows how APIs are used together in a typical application.
 
+## Tools Used
+
+* Postman – API testing
+* Markdown – Documentation formatting
+* GitHub – Version control and hosting
+* JSONPlaceholder – Mock API for practice
+
+This project demonstrates practical API documentation skills including request/response structuring, authentication, and error handling.
