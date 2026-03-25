@@ -1,5 +1,9 @@
 # API Documentation Portfolio 📚
 
+Base URL:
+https://api.example.com
+
+
 ## Project 2: Posts API
 
 ---
@@ -47,7 +51,12 @@ No request body is required.
   }
 ]
 ```
+## Authentication
 
+This API uses Bearer Token authentication.
+
+Example:
+Authorization: Bearer YOUR_API_TOKEN
 ---
 
 ## Create Post API
@@ -96,3 +105,35 @@ This API creates a new post on the server. It accepts post details in the reques
   "id": 101
 }
 ```
+## Authentication
+
+This API uses Bearer Token authentication.
+
+Example:
+Authorization: Bearer YOUR_API_TOKEN
+
+## Error Responses
+
+| Status Code | Meaning | Description |
+|------------|--------|-------------|
+| 400 | Bad Request | Missing or invalid input |
+| 401 | Unauthorized | Invalid or missing token |
+| 404 | Not Found | Incorrect endpoint |
+| 500 | Server Error | Internal server issue |
+
+Example:
+{
+  "error": "Invalid email format"
+}
+
+Sample Request (cURL)
+### Create User (POST)
+
+curl -X POST https://api.example.com/users \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "Vishal",
+  "email": "vishal@test.com",
+  "city": "Varanasi"
+}'
+
