@@ -1,0 +1,63 @@
+site_name: Vishal Kasaudhan – API Documentation Portfolio
+site_description: Technical Writer specializing in API documentation, REST APIs, and developer guides.
+site_author: Vishal Kasaudhan
+site_url: https://vishal160703.github.io/api-documentation-portfolio/
+
+repo_name: Vishal160703/api-documentation-portfolio
+repo_url: https://github.com/Vishal160703/api-documentation-portfolio
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Posts API:
+    - Overview: posts-api/overview.md
+    - GET Posts: posts-api/get-posts.md
+    - POST Create Post: posts-api/post-create.md
+    - Error Reference: posts-api/errors.md
+  - Users API:
+    - Overview: users-api/overview.md
+    - POST Create User: users-api/post-create-user.md
+  - Guides:
+    - Authentication: guides/authentication.md
+    - Use Case Workflow: guides/use-case.md
+  - About: about.md
