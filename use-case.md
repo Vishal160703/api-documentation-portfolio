@@ -76,8 +76,8 @@ curl -X GET https://api.example.com/users/usr_4829xk \
 {
   "id": "usr_4829xk",
   "name": "Vishal",
-  "email": "vishal@test.com",
-  "city": "Delhi"
+  "email": "vishal@kasaudhan.com",
+  "city": "Noida"
 }
 ```
 
